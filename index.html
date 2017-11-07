@@ -1,0 +1,187 @@
+<html>
+	<head>
+		<title> EVENTOS_SIP </title>
+		<meta name="description" content="Tela inicial para cadastro de palestras SIP">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+		<link rel="stylesheet" type="text/css" href="style.css"> </link>
+		<script type="text/javascript" src="CONTROLLER/portal_index.js"></script>
+	</head>
+
+	<body>
+		<div id="header-bar">
+			<div class="img-logo">
+				<img align="left" src="Imagem_PITAGORAS_LOGO_1.jpg" width="120px" height="110px"/>
+			</div>
+			<div class="img-sip">
+				<img align="bottom" src="Imagem_SIP_1.png" width="319px" height="168px"/>
+			</div>
+		</div>
+		
+		
+		<div class="quadro-textos">
+			<fieldset>
+			<legend>Palestras</legend>
+			</br>
+			</br>
+			</br>
+				Horário: 18h – 19h30min     local: Prédio 12 bloco C sala 103
+				</br>
+				– 06 de abril (quinta-feira)
+				</br>
+				– Palestrante: Drª. Fabiana Nascimento
+				</br>
+				Título da Palestra: Química Medicinal
+				</br>
+				– 19 de abril (quarta-feira)
+				</br>
+				– Palestrante: Profª. Ofelia Araujo
+				</br>
+				Título da Palestra: Tecnologias de Captura e Armazenamento de Carbono: Cenário atual e motivadores de inovação
+				</br>
+				– 04 de maio (quinta-feira)
+				</br>
+				– Palestrante: Dr. Raoni Rambo
+				</br>
+				Título da Palestra: A importância da Síntese Orgânica na Indústria
+				</br>
+				–  22 de maio (segunda-feira)
+				</br>
+				– Palestrante: Prof. Dr. J. Marcelo M. Ketzer
+				</br>
+				Título da Palestra: O Petróleo vai acabar?
+				</br>
+				– 29 de maio (segunda-feira)
+				</br>
+				– Palestrante:
+				</br>
+				Título da Palestra: Os Desafios da Indústria de Alimentos
+				</br>
+				Horário: 18h – 19h30min     local: Prédio 12 bloco C sala 103
+				</br>
+				– 06 de abril (quinta-feira)
+				</br>
+				– Palestrante: Drª. Fabiana Nascimento
+				</br>
+				Título da Palestra: Química Medicinal
+				</br>
+				– 19 de abril (quarta-feira)
+				</br>
+				– Palestrante: Profª. Ofelia Araujo
+				</br>
+				Título da Palestra: Tecnologias de Captura e Armazenamento de Carbono: Cenário atual e motivadores de inovação
+				</br>
+				– 04 de maio (quinta-feira)
+				</br>
+				– Palestrante: Dr. Raoni Rambo
+				</br>
+				Título da Palestra: A importância da Síntese Orgânica na Indústria
+				</br>
+				–  22 de maio (segunda-feira)
+				</br>
+				– Palestrante: Prof. Dr. J. Marcelo M. Ketzer
+				</br>
+				Título da Palestra: O Petróleo vai acabar?
+				</br>
+				– 29 de maio (segunda-feira)
+				</br>
+				– Palestrante:
+				</br>
+				Título da Palestra: Os Desafios da Indústria de Alimentos
+				</br>
+			</fieldset>
+		</div>
+		<div class="quadro-login">
+			<fieldset>
+				<legend>Login</legend>
+				<div  class="login-form">
+					<form method = "post" action = "/api/login">
+						<input class="login-input" id="usuario" type="text" placeholder="Usuário" name="cpf"/>
+						<input class="login-input" id="senha" type="password" placeholder="Senha" name="senha"/>
+						</br>
+						<button class="button-standard" type="submit" >LOGIN</button>
+						</br>
+					</form>
+					</br>
+					</br>
+					<a class="button-cadastro" href="#abrirModal" >CADASTRAR NOVO</a>
+				</div>
+			</fieldset>
+		</div>	
+		<div id="abrirModal" class="modal">
+			<a href="#fechar" title="Fechar" class="fechar">x</a>
+			<h2>CADASTRO NOVO</h2>
+			<form method = "post" action = "/api/cadastro">	
+			<fieldset>
+			<legend>Dados Pessoais</legend>
+				<table cellspacing="10">
+					<tr>
+						<td>
+							<label for="nome">Nome: </label>
+						</td>
+						<td align="left">
+							<input type="text" name="nome">
+						</td>
+						<td>
+							<label for="sobrenome">Sobrenome: </label>
+						</td>
+							<td align="left">
+							<input type="text" name="sobrenome">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Nascimento: </label>
+						</td>
+						<td align="left">
+							<input type="date" name="data"> 
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="rg">RG: </label>
+						</td>
+						<td align="left">
+							<input type="text" name="rg" size="13" maxlength="13"> 
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>CPF:</label>
+						</td>
+						<td align="left">
+							<input type="text" name="cpf" size="11" maxlength="11">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>RA:</label>
+						</td>
+						<td align="left">
+							<input type="text" name="ra" size="11" maxlength="11">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="email">E-mail: </label>
+						</td>
+						<td align="left">
+							<input type="text" name="email">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="senha">Senha: </label>
+						</td>
+						<td align="left">
+							<input type="password" name="senha">
+						</td>
+					</tr>
+				</table>
+				</fieldset>
+				</br>
+				<input class="button-cadastro" type="submit" value="SALVAR">
+				<input class="button-cadastro" type="reset" value="LIMPAR">	
+			</form>
+		</div>
+	 </body>
+</html>
